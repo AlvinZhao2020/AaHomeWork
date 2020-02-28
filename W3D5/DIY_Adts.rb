@@ -32,3 +32,40 @@ class   Queue
         @queue[0]
     end
 end
+
+class Map
+    def initialize
+        @grid = []
+    end
+    
+    def set(k,v)
+        if @grid.none?{|pair| pair[0] == k}
+            @grid << [k,v] 
+        else    
+            @grid.each do |pair|
+                pair[1] = v if pair[0] == k
+            end
+        end
+    end
+
+    def get(k)
+        @grid.each do |pair|
+            return pair[1] if pair[0] == k
+        end
+        return nil
+    end
+
+    def delete(k)
+        @grid.each do |pair|
+           return  @grid.delete(pair) if pair[0] == k
+        end
+        return nil 
+    end
+
+    def show
+        @grid.each do |pair|
+            print "#{pair} \n"
+        end
+    end
+end
+
