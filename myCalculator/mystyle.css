@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#box{
+    left :50px;
+    top :50px;
+    position: absolute;
+    width: 156px; 
+    background-color: lemonchiffon;
+    border: lightgreen solid 2px;
+   
+}
+
+
+button{
+    width: 30px;
+    height: 22px;
+    margin: 3px;
+}
+
+input{
+    width: 148px;
+    height: 24px;
+    margin:3px;
+    border: black solid 1px;
+    text-align: right;
+    font-size: 20px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="box">
+        <div id = "screen" >
+            <input type="text" name="" id="num" disabled ="disabled" value="0">        
+        </div>
+
+        <div id = "buttons">
+            <button id="1" onclick="funNum(1)">1</button>
+            <button id="2" onclick="funNum(2)">2</button>
+            <button id="3" onclick="funNum(3)">3</button>
+            <button id="+" onclick="funOperator('+')">+</button>
+            <button id="4" onclick="funNum(4)">4</button>
+            <button id="5" onclick="funNum(5)">5</button>
+            <button id="6" onclick="funNum(6)">6</button>
+            <button id="-" onclick="funOperator('-')">-</button>
+            <button id="7" onclick="funNum(7)">7</button>
+            <button id="8" onclick="funNum(8)">8</button>
+            <button id="9" onclick="funNum(9)">9</button>
+            <button id="x" onclick="funOperator('x')">x</button>
+            <button id="." onclick="dot()">.</button>
+            <button id="0" onclick="funNum(0)">0</button>
+            <button id="delete" onclick="dele()">🔙</button>
+            <button id="/" onclick="funOperator('/')">/</button>
+            <button id="AC" onclick="reset()">AC</button>
+            <button id="+/-" onclick="getReverse()">+/-</button>
+            <button id="%" onclick="funOperator('%')">%</button>
+            <button id="=" onclick="funOperator('=')">=</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="myjs.js"></script>
+</body>
+</html>
